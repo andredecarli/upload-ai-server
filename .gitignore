@@ -1,4 +1,5 @@
 node_modules
+.vscode
 # Keep environment variables out of version control
 .env
 
@@ -7,3 +8,5 @@ tmp
 .eslintrc.json
 
 *.mp3
+
+prisma/dev.db*

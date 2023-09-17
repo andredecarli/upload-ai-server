@@ -48,6 +48,6 @@ export async function uploadVideosRoute(app: FastifyInstance) {
       },
     })
 
-    return video
+    return { video }
   })
 }
