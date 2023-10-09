@@ -4,7 +4,6 @@ import { uploadVideosRoute } from './routes/upload-video'
 import { createTranscriptionRoute } from './routes/create-transcription'
 import { generateAICompletionRoute } from './routes/generate-ai-completion'
 import fastifyCors from '@fastify/cors'
-import { exchangeKeysRoute } from './routes/exchange-keys'
 
 const app = fastify()
 
@@ -16,7 +15,6 @@ app.register(getAllPromptsRoute)
 app.register(uploadVideosRoute)
 app.register(createTranscriptionRoute)
 app.register(generateAICompletionRoute)
-app.register(exchangeKeysRoute)
 
 app
   .listen({
